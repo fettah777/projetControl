@@ -46,7 +46,7 @@
         android:rotationX="0"
         android:text="\? * 0 = ? \n ? * 1 = ? \n ? * 2 = ? \n ? * 3 = ? \n ? * 4 = ? \n ? * 5 = ? \n ? * 6 = ? \n ? * 7 = ? \n ? * 8 = ? \n ? * 9 = ? \n ? * 10 = ?"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/quitter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.377" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/quitter"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button effacer,afficher,quitter,btn1,btn2,btn3;
@@ -64,6 +65,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 layoutT.setBackgroundColor(0x673AB7);
+            }
+        });
+
+          afficher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Saisirnbr.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this, "veuillez  saisir un entier !", Toast.LENGTH_SHORT).show();
+                    effacer.callOnClick();
+                    return;
+                }
+                int num = Integer.parseInt(Saisirnbr.getText().toString());
+                StringBuffer txt = new StringBuffer();
+                for (int i = 0; i <= 10; i++) {
+                    txt.append(String.format("%d * %d = %d \n",num,i,num*i));
+                }
+                textafficher.setText(txt);
             }
         });
     }

@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(Saisirnbr.getText().toString().isEmpty()){
-                    Toast.makeText(MainActivity.this, "please  saisir un entier !", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "veuillez  saisir un entier !", Toast.LENGTH_SHORT).show();
                     effacer.callOnClick();
                     return;
                 }

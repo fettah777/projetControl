@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Table De Multiplication ");
+        setTitle("table De Multiplication ");
         effacer = findViewById(R.id.effacer);
         afficher = findViewById(R.id.afficher);
         quitter = findViewById(R.id.quitter);
